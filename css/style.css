@@ -1,1 +1,61 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: white;
+  font-family: sans-serif;
+}
+
+/* Centered Logo */
+.center-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-logo img {
+  height: 50px; /* Adjust size as needed */
+}
+
+/* Top-Right Menu Icon */
+.menu-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  position: fixed;
+}
+
+.menu-icon {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+/* Hidden Navigation Menu */
+.nav-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: black;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+}
+
+.menu-container:hover .nav-menu {
+  display: flex;
+}
 
